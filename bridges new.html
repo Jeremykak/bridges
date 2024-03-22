@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDGES COLLEGE ZANA</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: monospace;
+    }
+    .div ul li{
+        list-style: none;
+        display: block;
+    }
+    .logo{
+          padding-top: 10px;
+          height: 50px;
+          width: 50px;
+          position: relative;
+    }
+    h1{
+        padding-right: 100px;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+    }
+   
+    img{
+        align-items: center;
+    }
+    .div1 ul{
+        list-style: none;
+        background:brown;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+    }
+    .div1 ul li h1{
+        font-size: 30px;
+    }
+    ul li a{
+        display: block;
+        padding: 20px 25px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        font-family: serif;
+        }
+        ul li ul.dropdown li {
+            display: block;
+        }
+        ul li ul.dropdown {
+            width: 100%;
+            background: brown;
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
+        ul li:hover ul.dropdown{
+            display: block;
+            
+        }
+    .div2 {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .slide1,.slide2,.slide3{
+        position: absolute;
+        display: block;
+    }
+    .slide1{
+        width: 100%;
+        height: 400px;
+        animation: fade1 10s infinite;
+    }
+    .slide2{
+        width: 100%;
+        height: 400px;
+        animation: fade2 10s infinite;
+    }
+    .slide3{
+        width: 100%;
+        height: 400px;
+        animation: fade3 10s infinite;
+    }
+    @keyframes fade1
+        {
+            0%{opacity: 1;}
+            25%{opacity: 0;}
+            50%{opacity: 0;}
+            75%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        @keyframes fade2
+        {
+            0%{opacity: 0;}
+            25%{opacity: 1;}
+            50%{opacity: 0;}
+            75%{opacity: 0;}
+            100%{opacity: 0;}
+        }@keyframes fade3
+        {
+            0%{opacity: 1;}
+            25%{opacity: 0;}
+            50%{opacity: 1;}
+            75%{opacity: 1;}
+            100%{opacity: 0;}
+        }
+        .card{
+                width: 200px;
+                height: 230px;
+                display: inline-block;
+                border-radius: 10px;
+                padding: 15px 25px;
+                cursor: pointer;
+                margin: 10px 15px;
+                background-image: url(maron.png);
+                background-position: center;
+                background-size: cover;
+                transition: transform 0.5s;
+            }
+            .col {
+                text-align: center;
+                display: inline-flex;
+            }
+            
+            .card1{
+                background-image: url(jaja.jpg);
+            }
+            .card2{
+                background-image: url(images/denis.JPG);
+            }
+            .card3{
+                background-image: url(images/dav.JPG);
+            }
+            .card4{
+                background-image: url(mum.jpg);
+            }
+            .card:hover{
+                transform: translateY(-10px);
+            }
+    .history{
+        position: relative;
+        display: flex;
+    }
+    .history .info{
+        flex-grow: 1;
+        width: 600px;
+    }
+    .history .info h1{
+
+    }
+    .history img{
+        height: 400px;
+        width: 300px;
+        flex-grow: 1;
+    }
+    .hm {
+        display: flex;
+        padding-bottom: 70px;
+    }
+    .hm img {
+        width: 200px;
+        height: 400px;
+        flex-grow: 1;
+    }
+    .hm .greet {
+        flex-grow: 1;
+        width: 600px;
+        padding-left: 50px;
+    }
+    .qoute {
+        padding-top: 40px;
+        height: 50px;
+        width: 100%;
+        background-color: brown;
+        padding-bottom: 40px;
+
+    }
+    .location{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .location img {
+        height: 500px;
+        width: 100%;
+    }
+        footer{
+        background: #000;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 0;
+    }
+    .container {
+        display: flex;
+        padding-right: 100px;
+    }
+    .container ul p a{
+        font-size: 15px;
+        line-height: 0;
+        color: #fff;
+    }
+    .about {
+        padding-right: 300px;
+        padding-left: 20px;
+        display:inline;
+        width: 600px;
+    }
+    .services {
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+    .services ul li{
+        list-style: none;
+        display: flex;
+    }
+    .contact {
+       flex-grow: 1;
+       flex-basis: 100%; 
+    }
+    .copyright{
+        padding-top: 20px;
+        text-align: center;
+    }
+    @media only screen and (max-width:800px){
+     .container{
+        flex-direction: column;
+     }
+     .div ul li{
+        list-style: none;
+        display: block;
+    }
+    .logo{
+          padding-top: 10px;
+          height: 50px;
+          width: 50px;
+          position: relative;
+    }
+    h1{
+        padding-right: 100px;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+        font-size: 30px;
+    }
+   
+    img{
+        align-items: center;
+    }
+    .div1 ul{
+        list-style: none;
+        background:brown;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+    }
+    .div1 ul li img{
+       height: 10px;
+       width: 10px;
+       padding-left: 10px;
+    }
+    .div1 ul li h1{
+        font-size: 10px;
+        padding-top: 0;
+        padding-right: 30px;
+    }
+    .div1 ul li a{
+        display: block;
+        padding: 10px 5px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 7px;
+        font-family: serif;
+        }
+        ul li ul.dropdown li {
+            display: block;
+        }
+        ul li ul.dropdown {
+            width: 100%;
+            background: brown;
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
+        ul li:hover ul.dropdown{
+            display: block;
+            
+        }
+        .card{
+                width: 30px;
+                height: 50px;
+                display: inline-block;
+                border-radius: 10px;
+                padding: 15px 25px;
+                cursor: pointer;
+                margin: 5px 5px;
+                background-image: url(maron.png);
+                background-position: center;
+                background-size: cover;
+                transition: transform 0.5s;
+            }
+            .col {
+                text-align: center;
+                display: inline-flex;
+            }
+            .col h5{
+                font-size: 7px;
+            }
+            .col p{
+                font-size: 3px;
+            }
+            .card1{
+                background-image: url(jaja.jpg);
+            }
+            .card2{
+                background-image: url(images/denis.JPG);
+            }
+            .col .card .card6 p{
+                font-size: 2px;
+            }
+            .card3{
+                background-image: url(images/dav.JPG);
+            }
+            .card4{
+                background-image: url(mum.jpg);
+            }
+            .card:hover{
+                transform: translateY(-10px);
+            }
+    .history{
+        position: relative;
+        display: block ;
+    }
+    .history .info{
+        width: 600px;
+    }
+    .history .info h1{
+         font-size: 20px;
+    }
+    .history .info p {
+        font-size: 10px;
+        width: 300px;
+}
+    .history img{
+        height: 200px;
+        width: 250px;
+    }
+    .div2 {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    .div2 img{
+        width: 100%;
+        height: 300px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .hm {
+        display: block;
+        padding-bottom: 70px;
+        height: auto;
+        width: 100%;
+    }
+    .hm img {
+        width: 200px;
+        height: 300px;
+    }
+    .hm .greet {
+        width: 300px;
+        padding-left: 10px;
+        font-size: 9px;
+    }
+    .admin h1{
+        font-size: 15px;
+    }
+    .admin .col p{
+        font-size: 5px;
+    }
+    .admin .col h5{
+        font-size: 5px;
+    }
+    .qoute{
+        width: 100%;
+        height: 10px;
+    }
+    .qoute h1{
+        font-size: 10px;
+        text-align: center;
+        padding-left: 70px;
+    }
+    .location h1{
+        font-size: 15px;
+    }
+    .location img{
+        width: 100%;
+        height: 100px;
+    }
+    footer{
+        background: #000;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 0;
+    }
+    .container {
+        display: block;
+        padding-right: 20px;
+    }
+    .container .about p{
+        font-size: 7px;
+        line-height: 10px;
+        color: #fff;
+        width: 100%;
+    }
+    .about {
+        padding-right: 300px;
+        padding-left: 20px;
+        display:inline;
+        width: 100%;
+    }
+    .services {
+       
+        
+    }
+    .services ul li a{
+        list-style: none;
+        line-height: 0px;
+        font-size: 15px;
+        padding-left: 3px;
+    }
+    .contact {
+       flex-basis: 100%; 
+    }
+    .copyright{
+        padding-top: 20px;
+        text-align: center;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    }
+    @media only screen and (min-width:810px),(max-width:999px){
+        html,body{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .div1 ul li h1{
+            font-size: 20px;
+            padding-right: 0px;
+        }
+        .div1 ul li a{
+            font-size: 13px;
+        }
+        .div1 ul li img{
+            height: 30px;
+            width: 30px;
+            padding-top: 20px;
+        }
+        .div2{
+            position: relative;
+        }
+        .col h5{
+                font-size: 20px;
+            }
+            .col p{
+                font-size: 10px;
+            }
+        .card{
+                width: 130px;
+                height: 150px;
+                display: inline-block;
+                border-radius: 10px;
+                padding: 15px 25px;
+                cursor: pointer;
+                margin: 5px 5px;
+                background-image: url(maron.png);
+                background-position: center;
+                background-size: cover;
+                transition: transform 0.5s;
+            }
+            .card1{
+                background-image: url(jaja.jpg);
+            }
+            .card2{
+                background-image: url(images/denis.JPG);
+            }
+            .col .card .card6 p{
+                font-size: 2px;
+            }
+            .card3{
+                background-image: url(images/dav.JPG);
+            }
+            .card4{
+                background-image: url(mum.jpg);
+            }
+            .card:hover{
+                transform: translateY(-10px);
+            }
+            footer .container .about {
+                padding-right: 10px;
+            }
+            footer .container .about p{
+                font-size: 7px;
+            }
+            .services ul li a{
+                font-size: 10px;
+                line-height: 0px;
+            }
+    }
+    @media only screen and (min-width:300px),(max-width:600px){
+        html,body{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .div1 ul li h1{
+            font-size: 10px;
+            padding-right: 5px;
+        }
+        .div1 ul li a{
+            font-size: 7px;
+        }
+        .div1 ul li img{
+            height: 20px;
+            width: 20px;
+            padding-top: 0px;
+        }
+        .div2{
+            position: relative;
+        }
+        .col h5{
+                font-size: 7px;
+            }
+            .col p{
+                font-size: 3px;
+            }
+        .card{
+                width: 30px;
+                height: 50px;
+                display: inline-block;
+                border-radius: 10px;
+                padding: 15px 25px;
+                cursor: pointer;
+                margin: 5px 5px;
+                background-image: url(maron.png);
+                background-position: center;
+                background-size: cover;
+                transition: transform 0.5s;
+            }
+            .card1{
+                background-image: url(jaja.jpg);
+            }
+            .card2{
+                background-image: url(images/denis.JPG);
+            }
+            .col .card .card6 p{
+                font-size: 2px;
+            }
+            .card3{
+                background-image: url(images/dav.JPG);
+            }
+            .card4{
+                background-image: url(mum.jpg);
+            }
+            .card:hover{
+                transform: translateY(-10px);
+            }
+            footer .container .about {
+                padding-right: 10px;
+            }
+            footer .container .about p{
+                font-size: 7px;
+            }
+            .services ul li a{
+                font-size: 10px;
+                line-height: 0px;
+            }
+    }
+    @media only screen and (min-width:600px),(){
+        html,body{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .div1 ul li h1{
+            font-size: 20px;
+            padding-right: 40px;
+        }
+        .div1 ul li a{
+            font-size: 13px;
+        }
+        .div1 ul li img{
+            height: 30px;
+            width: 30px;
+            padding-top: 20px;
+        }
+        .div2{
+            position: relative;
+        }
+        .col h5{
+                font-size: 20px;
+            }
+            .col p{
+                font-size: 10px;
+            }
+        .card{
+                width: 130px;
+                height: 150px;
+                display: inline-block;
+                border-radius: 10px;
+                padding: 15px 25px;
+                cursor: pointer;
+                margin: 5px 5px;
+                background-image: url(maron.png);
+                background-position: center;
+                background-size: cover;
+                transition: transform 0.5s;
+            }
+            .card1{
+                background-image: url(jaja.jpg);
+            }
+            .card2{
+                background-image: url(images/denis.JPG);
+            }
+            .col .card .card6 p{
+                font-size: 2px;
+            }
+            .card3{
+                background-image: url(images/dav.JPG);
+            }
+            .card4{
+                background-image: url(mum.jpg);
+            }
+            .card:hover{
+                transform: translateY(-10px);
+            }
+            footer .container .about {
+                padding-right: 10px;
+            }
+            footer .container .about p{
+                font-size: 7px;
+            }
+            .services ul li a{
+                font-size: 10px;
+                line-height: 0px;
+            }
+            .location img{
+        width: 100%;
+        height: 200px;
+            }
+        .history .info p{
+            font-size: 13px;
+            width: 100%;
+        }
+        .hm .greet{
+            font-size: 13px;
+            width: 100%;
+        }
+    }
+        @media only screen and (max-width:280px){
+        html,body{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .div1 ul li h1{
+            font-size: 7px;
+            padding-right: 5px;
+        }
+        .div1 ul li a{
+            font-size: 4px;
+        }
+        .div1 ul li img{
+            height: 20px;
+            width: 20px;
+            padding-top: 20px;
+        }
+        .div2{
+            position: relative;
+        }
+        .col h5{
+                font-size: 5px;
+            }
+            .col p{
+                font-size: 1.5px;
+            }
+        .card{
+                width: 10px;
+                height: 30px;
+                display: inline-block;
+                border-radius: 10px;
+                padding: 15px 25px;
+                cursor: pointer;
+                margin: 5px 5px;
+                background-image: url(maron.png);
+                background-position: center;
+                background-size: cover;
+                transition: transform 0.5s;
+            }
+            .card1{
+                background-image: url(jaja.jpg);
+            }
+            .card2{
+                background-image: url(images/denis.JPG);
+            }
+            .col .card .card6 p{
+                font-size: 2px;
+            }
+            .card3{
+                background-image: url(images/dav.JPG);
+            }
+            .card4{
+                background-image: url(mum.jpg);
+            }
+            .card:hover{
+                transform: translateY(-10px);
+            }
+            footer .container .about {
+                padding-right: 10px;
+            }
+            footer .container .about p{
+                font-size: 7px;
+            }
+            .services ul li a{
+                font-size: 10px;
+                line-height: 0px;
+            }
+            .location img{
+        width: 100%;
+        height: 200px;
+            }
+        .history .info p{
+            font-size: 7px;
+            width: 200px;
+        }
+        .hm .greet{
+            font-size: 7px;
+            width: 100%;
+        }
+        .qoute h1{
+            font-size: 7px;
+        }
+    }
+</style>
+<body style="background-color:rgb(204, 204, 205);">
+<div class="div1">
+    <ul><li><img src="./new barge.jpg" class="logo"></li>
+    <li><h1 style="font-family:Georgia, 'Times New Roman', Times, serif; ; background:transparent;color: black;">BRIDGES COLLEGE ZANA</h1>
+        
+    
+            <li><a href="#">HOME</a></li>
+            <li>
+                <a href="#">ABOUT </a>
+                <ul class="dropdown">
+                    <li><a href="file:///C:/Users/SYLVIA/Desktop/jeremy/staff.html">Staff</a></li>
+                    <li><a href="file:///C:/Users/SYLVIA/Desktop/jeremy/fix.html">Gallery</a></li>
+                    <li><a href="file:///C:/Users/SYLVIA/Desktop/jeremy/Subjects.html">Subjects</a></li>
+                    <li><a href="file:///C:/Users/SYLVIA/Desktop/jeremy/table.html">school fess</a></li>
+                </ul>
+                <li><a href="file:///C:/Users/SYLVIA/Desktop/jeremy/plan.html">PROGRAM</a></li>
+                <li><a href="file:///C:/Users/SYLVIA/Desktop/jeremy/contact.html">CONTACT US</a></li>
+            </ul>
+</div>
+<div class="div2">
+<img src="1.jpg" class="slide1">
+<img src="4.jpg" class="slide2">
+<img src="2.jpg" class="slide3">
+</div>
+<div class="col">
+    <div class="card card5"><h5 style="font-family: Georgia, 'Times New Roman', Times, serif; color: #fff;">MOTTO</h5><p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(255, 255, 255);">Success is no Accident</p></div>
+<div class="card card6"><h5 style="font-family: Georgia, 'Times New Roman', Times, serif; color: #fff;">MISSION</h5><p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(255, 255, 255);">Provide affordable quality education and training to ensure that our students are adequately prepared for indivadual fulfilment and prosperity through employment job craetion and contribution to National Economy.</p></div>
+<div class="card card7"><h5 style="font-family: Georgia, 'Times New Roman', Times, serif; color: #fff;">VISION</h5><p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(255, 255, 255);">Improvement of individuals and society through education.</p></div>
+<div class="card card8"><h5 style="font-family: Georgia, 'Times New Roman', Times, serif; color: #fff;">CORE VAULUES</h5><p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(255, 255, 255);">Integrity, respect of persons and property</p></div>
+</div>
+<div class="history">
+    <div class="info"><h1 style="color: brown; font-family: Georgia, 'Times New Roman', Times, serif;">ABOUT US</h1>
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Bridges College Zana is located 7km off Kampala-Entebbe road, 1/2km Zana market-Nyanama road.Brdges college Zana is a private mixed day and bording
+    school with a touch of professional touch as the founders are long serving teachers. Though the school may appear small but its large number of dedicated teachers gives personal attention to challenge the broad based UNEB
+curriculum and opportunity to pass highly both 'O' and 'A' Level examinations. We specialize in both Arts and Sciences Subjects.
+Our cirriculum is comprhensive which includes humanities, science, commercial bussiness, technical (crafts), Music dance and drama, games and sports. Right from the time a student joins our school up to the end he/she is trained
+ beyond justrdinary class work but think like enteprenuers. Their creative minds are tested in different fields while their tallents are explored.</p></div>
+         <img src="21.JPG" alt="">
+
+</div>
+<h2 style="color: brown; font-family: Georgia, 'Times New Roman', Times, serif;">Word from Headteacher</h2>
+<div class="hm" style="background-color: #ad9c9c;">
+    <img src="20.JPG" alt=""><p style="font-family: Georgia, 'Times New Roman', Times, serif;" class="greet">Greetings Beloved! Praise be to God who gives us another year to live in His goodness. Bridges College Zana stands as a beacon of educational excellence, fostering a dynamic learning environment that transcends traditional boundaries. Our School is committed to shaping the future by nurturing young minds and instilling values that extend beyond the classroom.
+        Beyond academics, Mengo Senior School places a premium on character development. We are devoted to moulding well-rounded individuals who contribute meaningfully to society. Our emphasis on moral values, leadership skills, and community service reflects our commitment to producing responsible citizens capable of navigating the complexities of the world.
+        
+        Our impact extends far beyond the the classroom. Our vibrant extracurricular activities provide students with opportunities to explore their talents and passions, be it in Sports, Arts, or various clubs and societies. These activities not only enrich their overall educational experience but also contribute to the development of teamwork, discipline, and a sense of belonging.
+        
+        Our institution recognizes the importance of collaboration with parents, guardians, and the broader community.
+        
+        As a responsible member of the community, Bridges College Zana is committed to exploring our students talents putting them to use . Through these efforts, we aim to make a positive impact on the lives of those around us, reinforcing the school's role as a catalyst for positive change.
+        
+        In conclusion, Bridges College Zana is not just an educational institution; it is a nurturing ground for future leaders, innovators, and compassionate individuals. Our unwavering commitment to excellence, both in academics and character development, sets us apart. Together, with the support of our dedicated staff, engaged parents, and the broader community, we continue to shape a brighter future for generations to come. Success is no Accident!</p>
+</div>
+<div class="admin"><h1 style="color: brown; font-family: Georgia, 'Times New Roman', Times, serif;">School Administration</h1>
+    <div class="col">
+        <div class="card card1"><h5 style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff;">Director</h5><p style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: #fff;">Mr Mathesula Kiberu</p></div>
+    <div class="card card2"><h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff;">Headteacher</h5><p style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #fff;">Mr Lukyamuzi Denis</p></div>
+    <div class="card card3"><h5 style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff;">Director of studies</h5><p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #fff;">Mr Ssemwogerere David</p></div>
+    <div class="card card4"><h5 style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff;">Bursar</h5><p style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #fff;">Ms Nansubuga Slyvia</p></div>
+    </div>
+</div>
+<div class="qoute"><h1>"An investment in knowledge pays the best interest."
+    - Benjamin Franklin</h1></div>
+<div class="location"><h1 style="color: brown;">School location</h1><img src="map.png" alt=""></div>
+<footer>
+    <section class="container">
+        <div class="about"><h3>about us</h3>
+        <p>Bridges College Zana is located 7km off Kampala-Entebbe road, 1/2km Zana market-Nyanama road.Brdges college Zana is a private mixed day and bording
+            school with a touch of professional touch as the founders are long serving teachers. Though the school may appear small but its large number of dedicated teachers gives personal attention to challenge the broad based UNEB
+        curriculum and opportunity to pass highly both 'O' and 'A' Level examinations. We specialize in both Arts and Sciences Subjects.
+        </div>
+        <div class="services">
+            <h3> Featured Links</h3>
+            <ul>
+                <li>
+            <a href="Services">Admisions</a></li>
+                <li>
+                    <a href="Services">school fees</a></li>
+            </li>
+            <li>
+                <a href="Services">history</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>076102252</p>
+            <p>076521334</p>
+            <p>075623415</p>
+        </div>
+    </section>
+    <section class="copyright">copyright @Bridges Schools</section>
+    <section class="info"><a href="file:///C:/Users/SYLVIA/Desktop/jeremy/2.html"><h3>More info</h3></a></section>
+</footer>
+    
+</body>
+</html>
