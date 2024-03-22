@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news</title>
+</head>
+<style>
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+    .head {
+        width: 100%;
+        height: 100px;
+        background-color: brown;
+        position: relative;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 50px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head img {
+        width: 80px;
+        height: 80px;
+        padding-right: 50px;
+        padding-top: 28px;
+    }
+    .tab{
+        padding-bottom: 30px;
+        padding-top: 200px;
+        padding-left:220px;
+    }
+    .tab table{
+        width:800px;
+    }
+    .tab table tr .tab1{
+        width:200px;
+    }
+    .tab table tr .tab2{
+        width:600px;
+    }
+    .foot{
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        height: 70px;
+        color: #fff;
+        background-color: brown;
+        position: relative;
+    }
+    @media only screen and (max-width:800px){
+       html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+        .head {
+        width: 100%;
+        height: 50px;
+        background-color: brown;
+        position: absolute;
+        margin: 0;
+        padding-left: 0;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 20px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head img {
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    .tab{
+        padding-bottom: 30px;
+        padding-top: 70px;
+        padding-left:5px;
+    }
+    .tab table{
+        width:400px;
+    }
+    .tab table tr .tab1{
+        width:100px;
+    }
+    .tab table tr .tab2{
+        width:300px;
+    }
+    .foot{
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        height: 100px;
+        color: #fff;
+        background-color: brown;
+        position: relative;
+    }
+    }
+    @media only screen and (max-width:400px){
+       html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+        .head {
+        width: 100%;
+        height: 50px;
+        background-color: brown;
+        position: absolute;
+        margin: 0;
+        padding-left: 0;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 20px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head img {
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    .tab{
+        padding-bottom: 30px;
+        padding-top: 70px;
+        padding-left:5px;
+    }
+    .tab table{
+        width:350px;
+    }
+    .tab table tr .tab1{
+        width:100px;
+    }
+    .tab table tr .tab2{
+        width:250px;
+    }
+    .foot{
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        height: 100px;
+        color: #fff;
+        background-color: brown;
+        position: relative;
+    }
+    }
+    @media only screen and (min-width:600px){
+       html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+        .head {
+        width: 100%;
+        height: 50px;
+        background-color: brown;
+        position: absolute;
+        margin: 0;
+        padding-left: 0;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 20px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head img {
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    .tab{
+        padding-bottom: 30px;
+        padding-top: 70px;
+        padding-left:50px;
+    }
+    .tab table{
+        width:700px;
+    }
+    .tab table tr .tab1{
+        width:200px;
+    }
+    .tab table tr .tab2{
+        width:500px;
+    }
+    .foot{
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        height: 100px;
+        color: #fff;
+        background-color: brown;
+        position: relative;
+    }
+    }
+    @media only screen and (min-width:1000px){
+       html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+        .head {
+        width: 100%;
+        height: 50px;
+        background-color: brown;
+        position: absolute;
+        margin: 0;
+        padding-left: 0;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 20px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head img {
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    .tab{
+        padding-bottom: 30px;
+        padding-top: 70px;
+        align-content: center;
+    }
+    .tab table{
+        width:800px;
+    }
+    .tab table tr .tab1{
+        width:200px;
+    }
+    .tab table tr .tab2{
+        width:600px;
+    }
+    .foot{
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        height: 100px;
+        color: #fff;
+        background-color: brown;
+        position: relative;
+    }
+    }
+    @media only screen and (max-width:280px){
+       html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+        .head {
+        width: 100%;
+        height: 30px;
+        background-color: brown;
+        position: absolute;
+        margin: 0;
+        padding-left: 0;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 7px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head img {
+        width: 20px;
+        height: 20px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .tab{
+        padding-bottom: 30px;
+        padding-top: 70px;
+        padding-left:5px;
+    }
+    .tab table{
+        width:260px;
+    }
+    .tab table tr .tab1{
+        width:80px;
+    }
+    .tab table tr .tab2{
+        width:180px;
+    }
+    .foot{
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        height: 100px;
+        color: #fff;
+        background-color: brown;
+        position: relative;
+    }
+    .tab table tr td {
+        font-size: 10px;
+    }
+    .tab table tr td ul li{
+        font-size: 10px;
+    }
+    }
+</style>
+<body style="background-color: bisque;">
+    <div class="head">
+        <ul><li><img src="new barge.jpg" alt=""></li>
+            <li><h1>BRIDGES COLLEGE ZANA</h1></li>
+        </ul></div>
+    <div class="tab">
+    <table bgcolor="black">
+        <tr bgcolor="grey" align="center">
+            <th class="tab1">DATE / WEEK</th>
+            <th class="tab2">ACTIVITY</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <td>1st WEEK<br>
+                Mon/29th/Jan<br>
+            Tue/30th/Jan<br>
+            Wed/31st/jan</td>
+            <td><ul>
+                <li>Opening of term 1(1st fees collections)</li>
+                <li>Adminstrators meeting</li>
+                <li>BOT staff meeting</li>
+            </ul></td>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <td>2nd WEEK<ul>
+                <li>Mon/5th/feb</li>
+                <li>Wed/7th/feb</li>
+                <li>Fri/9th/feb</li>
+            </ul></td>
+            <td><ul>
+                <li>Non Staff meeting</li>
+                <li>Resident teachers meeting<br>
+                Academic guidance S1, S2, S3<br>
+            Class monitors meeting<br>
+            Prefects meeting</li>
+                <li>Handing in Schemes of work<br>
+                Science department meeting</li>
+            </ul></td></tr>
+            <tr bgcolor="lightgrey" align="center">
+            <td>3rd WEEK<ul>
+                <li>Sun/11th/feb</li>
+                <li>Thur/15th/feb</li>
+            </ul></td>
+            <td><ul>
+                <li>Borders meeting</li>
+                <li>Arts departmentmeeting</li>
+            </ul></td>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <td>4th WEEK<ul>
+                <li>Mon/19th/feb</li>
+                <li>Wed/21st/feb</li>
+            </ul></td>
+            <td><ul>
+                <li>Handing in department project budget</li>
+                <li>Ash Wednesday</li>
+            </ul></td>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <td>5th WEEK<ul>
+                <li>Wed/28th/feb</li>
+                <li>Fri/1st/March</li>
+                <li>Sat/2nd/March</li>
+                <li>Wed/6th/March</li>
+            </ul></td>
+            <td><ul>
+                <li>Guidance and counseling</li>
+                <li>Displinary meeting</li>
+                <li>Mid term exams submission deadline<br>
+                UCE, UACE result analysis</li>
+                <li>Meeting with class teachers</li>
+            </ul></td></tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>6th WEEK<ul>
+                    <li>Mon/11th/March</li>
+                    <li>Fri/15th/March</li>
+                </ul></td>
+                <td><ul>
+                    <li>Lent / Ramadhan starts<br>
+                    Starting mid term exams</li>
+                    <li>New prefect election</li>
+                </ul></td></tr>
+                <tr bgcolor="lightgrey" align="center">
+                    <td>7th WEEK<ul>
+                        <li>Sun/17th/March</li>
+                        <li>Fri/22nd/March</li>
+                        <li>Sun/24th/March</li>
+                    </ul></td>
+                    <td><ul>
+                        <li>PTA Excecutive meeting</li>
+                        <li>Swearing in Ceremony for new prefects</li>
+                        <li>Parents meeting / Visitation Day</li>
+                    </ul></td></tr><tr bgcolor="lightgrey" align="center">
+                        <td>8th WEEK<ul>
+                            <li>25th - 29th/March</li>
+                            <li>Fri/29th/March</li>
+                        </ul></td>
+                        <td><ul>
+                            <li>Inter-house sports and games</li>
+                            <li>Easter Holiday</li>
+                        </ul></td></tr>
+                        <tr bgcolor="lightgrey" align="center">
+                            <td>9th WEEK<ul>
+                                <li>Wed/3rd/April</li>
+                            </ul></td>
+                            <td><ul>
+                                <li>Inter-classes debate competitions</li>
+                            </ul></td></tr>
+                            <tr bgcolor="lightgrey" align="center">
+                                <td>10th WEEK<ul>
+                                    <li>Wed/10th/April</li>
+                                </ul></td>
+                                <td><ul>
+                                    <li>Submission of EOT exams deadline<br>
+                                    IDD AL-FITIR</li>
+                                </ul></td></tr>
+                                <tr bgcolor="lightgrey" align="center">
+                                    <td>11th WEEK<ul>
+                                        <li>11th - 17th/April/li>
+                                        <li>Mon/15th/April</li>
+                                    </ul></td>
+                                    <td><ul>
+                                        <li>Notes Clearance Week</li>
+                                        <li>End of Term Exams Start</li>
+                                    </ul></td></tr>
+                                    <tr bgcolor="lightgrey" align="center">
+                                        <td>12th WEEK<ul>
+                                            <li>FRi/26th/April</li>
+                                        </ul></td>
+                                        <td><ul>
+                                            <li>CLOSING OF TERM 1<br>
+                                            End of term 1 General Staff Meeting</li>
+                                        </ul></td></tr>
+    </table>
+    </div>
+    <div class="foot"><h1>SUCCESS IS NO ACCIDENT</h1></div>
+</body>
+</html>

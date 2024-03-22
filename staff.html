@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAFF</title>
+</head>
+<style>
+      .head {
+        width: 100%;
+        height: 100px;
+        background-color: brown;
+        position: absolute;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 50px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head img {
+        width: 80px;
+        height: 80px;
+        padding-right: 50px;
+        padding-top: 28px;
+    }
+    .div2{
+        padding-top: 150px;
+        text-align: center;
+        color: brown;
+    }
+    .tab1{
+        padding-bottom: 70px;
+        padding-top: 10px;
+        padding-left: 160px;
+    }
+    .tab1 table{
+        width: 920px;
+    }
+    .tab1 table tr .tab2{
+        width:20px;
+    }
+    .tab1 table tr .tab3{
+        width:300px;
+    }
+    .tab1 table tr .tab4{
+        width:300px;
+    }
+    .tab1 table tr .tab5{
+        width:300px;
+    }
+    footer {
+        background: brown;
+        bottom: 0;
+    }
+    .foot {
+        padding-top: 50px;
+        background-color: brown;
+        width: 100%;
+    }
+    .foot p {
+        color: #fff;
+    }
+    .foot ul li{
+        color: #fff;
+        cursor: pointer;
+        list-style: none;
+    }
+    @media only screen and (max-width:800px){
+        html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+        .head {
+        width: 100%;
+        height: 50px;
+        background-color: brown;
+        position: absolute;
+        margin: 0;
+        padding-left: 0;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 20px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head ul li img {
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .div2 h1{
+        font-size: 20px;
+    }
+    .tab1{
+        padding-bottom: 30px;
+        padding-top: 70px;
+        padding-left:5px;
+    }
+    .tab1 table{
+        width:400px;
+    }
+    .tab1 table tr th{
+        font-size: 10px;
+    }
+    .tab1 table tr .tab2{
+        width:10px;
+    }
+    .tab table tr .tab3{
+        width:100px;
+    }
+    .tab1 table tr .tab4{
+        width:100px;
+    }
+    .tab1 table tr .tab5{
+        width:100px;
+    }
+    footer{
+        width: 100%;
+        height: 200px;
+    }
+    .foot{
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        height: 100px;
+        color: #fff;
+        background-color: brown;
+        position: relative;
+    }
+    }
+    @media only screen and (max-width:400px){
+        html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+        .head {
+        width: 100%;
+        height: 50px;
+        background-color: brown;
+        position: absolute;
+        margin: 0;
+        padding-left: 0;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 20px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head ul li img {
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .div2 h1{
+        font-size: 20px;
+    }
+    .tab1{
+        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-left:5px;
+    }
+   
+    .tab1 table{
+        width:350px;
+    }
+    .tab1 table tr .tab2{
+        width:10px;
+    }
+    .tab table tr .tab3{
+        width:80px;
+    }
+    .tab1 table tr .tab4{
+        width:80px;
+    }
+    .tab1 table tr .tab5{
+        width:80px;
+    }
+    .tab1 table tr th{
+        font-size: 10px;
+    }
+    .tab1 table tr td{
+        font-size: 7px;
+    }
+    footer{
+        height: 200px;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .foot{
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        height: 100px;
+        color: #fff;
+        background-color: brown;
+        position: relative;
+    }
+    }
+    @media only screen and (min-width:600px){
+        html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+        .head {
+        width: 100%;
+        height: 50px;
+        background-color: brown;
+        position: absolute;
+        margin: 0;
+        padding-left: 0;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 20px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head ul li img {
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .div2 h1{
+        font-size: 20px;
+    }
+    .tab1{
+        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-left:70px;
+    }
+   
+    .tab1 table{
+        width:620px;
+    }
+    .tab1 table tr .tab2{
+        width:20px;
+    }
+    .tab table tr .tab3{
+        width:200px;
+    }
+    .tab1 table tr .tab4{
+        width:200px;
+    }
+    .tab1 table tr .tab5{
+        width:200px;
+    }
+    .tab1 table tr th{
+        font-size: 25px;
+    }
+    .tab1 table tr td{
+        font-size: 20px;
+    }
+    footer{
+        height: 200px;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .foot{
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        height: 100px;
+        color: #fff;
+        background-color: brown;
+        position: relative;
+    }
+    }
+    @media only screen and (min-width:1000px){
+        .tab1{
+        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-left:200px;
+    }
+    }
+    @media only screen and (min-width:1000px){
+        .tab1{
+        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-left:300px;
+    }
+}
+    @media only screen and (max-width:280px){
+        html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+        .head {
+        width: 100%;
+        height: 50px;
+        background-color: brown;
+        position: absolute;
+        margin: 0;
+        padding-left: 0;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 10px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head ul li img {
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .div2 h1{
+        font-size: 10px;
+    }
+    .tab1{
+        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-left:30px;
+    }
+   
+    .tab1 table{
+        width:210px;
+    }
+    .tab1 table tr .tab2{
+        width:10px;
+    }
+    .tab table tr .tab3{
+        width:50px;
+    }
+    .tab1 table tr .tab4{
+        width:50px;
+    }
+    .tab1 table tr .tab5{
+        width:60px;
+    }
+    .tab1 table tr th{
+        font-size: 7px;
+    }
+    .tab1 table tr td{
+        font-size: 7px;
+    }
+    footer{
+        height: 200px;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .foot{
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        height: 100px;
+        color: #fff;
+        background-color: brown;
+        position: relative;
+    }
+
+    }
+</style>
+<body>
+    <body style="background-color: bisque;">
+        <div class="head">
+            <ul><li><img src="new barge.jpg" alt=""></li>
+                <li><h1>BRIDGES COLLEGE ZANA</h1></li>
+            </ul></div>
+            <div class="div2"><h1>CURRENT LIST OF STAFF MEMBERS</h1></div>
+        <div class="tab1">
+        <table bgcolor="black" width="920px">
+            <tr bgcolor="grey" align="center">
+                <th class="tab2">NO.</th>
+                <th class="tab3">NAME</th>
+                <th class="tab4">RESPONSIBILITY/ OFFICE/ SUBJECTS</th>
+                <th class="tab5">CONTACT</th>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>1</td>
+                <td>Lukyamuzi Denis</td>
+                <td>Head techer, History/CRE</td>
+                <td>0752366805</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>2</td>
+                <td>Kazibwe Stephen </td>
+                <td>Geog/ Luganda</td>
+                <td>0704345824/0773934359</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>3</td>
+                <td>Naluzze Christine </td>
+                <td>Art/IPS</td>
+                <td>0775033698</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>4</td>
+                <td>Kiggwe Micheal </td>
+                <td>Lug/ His</td>
+                <td>0782744512</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>5</td>
+                <td>Kawuki Andrew </td>
+                <td>Art/IPS</td>
+                <td>0758157558</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>6</td>
+                <td>Allan Kabuye </td>
+                <td>Science lab attendant</td>
+                <td>0705664071</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>7</td>
+                <td>Ssemwogerere David </td>
+                <td>lit/ ICT & Voc skills</td>
+                <td>0702519686</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>8</td>
+                <td>Shoppi Eria </td>
+                <td>Econ/ Hist</td>
+                <td>0708900561</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>9</td>
+                <td>Kabugho Roset </td>
+                <td>Kiswahili</td>
+                <td>0787457522</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>10</td>
+                <td>Muddu Julius </td>
+                <td>Maths/ Physics</td>
+                <td>0789216641</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>11</td>
+                <td>Masajjagge Vicent </td>
+                <td>Bio/ Chem</td>
+                <td>070397611</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>12</td>
+                <td>Kifuko Brian </td>
+                <td>Agric/ PE</td>
+                <td>0754752440</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>13</td>
+                <td>Mutome Sarah </td>
+                <td>Math/ Econ</td>
+                <td>0704052752</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>14</td>
+                <td>Ndikubwimana Donald </td>
+                <td>French/ Kiswahili</td>
+                <td>0780755306</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>15</td>
+                <td>Ogwal Amos </td>
+                <td>Math/Physics</td>
+                <td>0754881783/ 0788124693</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>16</td>
+                <td>Kiramba Saida </td>
+                <td>IRE/ Hist</td>
+                <td>0704291140</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>17</td>
+                <td>Bamanya Maria </td>
+                <td>CRE/ Hist</td>
+                <td>0778692404</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>18</td>
+                <td>Nyakato Martha </td>
+                <td>Eng/ Lit</td>
+                <td>0778692404</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>19</td>
+                <td>Mugerwa Jimmy </td>
+                <td>CRE/ Hist</td>
+                <td>0759159327</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>20</td>
+                <td>Sembusi Godfrey </td>
+                <td>Biology/ Chemistry</td>
+                <td>0756022322</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>21</td>
+                <td>Kalibbala Ponsiano </td>
+                <td>ICT/ Math</td>
+                <td>0705790734</td>    
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>22</td>
+                <td>Kyambadde Joseph </td>
+                <td>Phy/ Math</td>
+                <td>0752321295</td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>23</td>
+                <td>Nakakande Aidah </td>
+                <td>His/ Geog</td>
+                <td>0758024047</td>
+            </tr>
+        </table></div>  
+        <footer>
+            <section class="foot">
+            <p align="center">FOR MORE INFOMATION CONTACT</p>
+            <ul align="center">
+                <li>0773816614</li>
+                <li>0706745480</li>
+                <li>0772631328</li>
+            </ul>
+            <p align="center"><a href="bridgescollegezana2022@gmail.com">Email: bridgescollegezana2022@gmail.com</a></p>
+            </section>
+        </footer>
+</body>
+</html>

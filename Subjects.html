@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBJECTS</title>
+</head>
+<style>
+    .head {
+        width: 100%;
+        height: 100px;
+        background-color: brown;
+        position: relative;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head img {
+        width: 70px;
+        height: 70px;
+        padding-right: 50px;
+        padding-top: 25px;
+    }
+    .container{
+        position: relative;
+        height: 500px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .container img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .container::before{
+        content: "SUCCESS IS NO ACCIDENT";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        margin-top: -100px;
+        opacity: 0;
+        transition: .3s;
+        transition-delay: .2s;
+        z-index: 1;
+    }
+    .container:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border-radius: 10px;
+        height: 0;
+        background-color: rgb(0,0,0,.4);
+        transition: .3s;
+       
+    }
+    .container:hover::after{
+        height: 100%;
+    }
+    .container:hover::before{
+        margin-top: 0;
+        opacity: 1;
+    }
+    .all{
+        display: flex;
+        padding-bottom: 100px;
+    }
+    .all .subs{
+        flex-grow: 1;
+    }
+    .all .sub2{
+        flex-grow: 1;
+    }
+    footer {
+        background: brown;
+        bottom: 0;
+    }
+    .foot {
+        padding-top: 50px;
+        background-color: brown;
+        width: 100%;
+    }
+    .foot p {
+        color: #fff;
+    }
+    .foot ul li{
+        color: #fff;
+        cursor: pointer;
+        list-style: none;
+    }
+    @media only screen and (max-width:800px){
+        html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+       .head {
+        width: 100%;
+        height: 50px;
+        background-color: brown;
+        position: relative;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 0px;
+    }
+    .head ul{
+        list-style: none;
+        display: flex;
+    }
+    .head ul li h1{
+        font-size: 20px;
+    }
+    .head h1 {
+        padding-top: 0;
+    }
+    .head ul li img {
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+        padding-top: 7px;
+        padding-left: 0px;
+    }
+    .container{
+        position: relative;
+        height: 200px;
+    }
+    .container img{
+        height: 200px;
+    }
+    .container::before{
+        content: "SUCCESS IS NO ACCIDENT";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        margin-top: -100px;
+        opacity: 0;
+        transition: .3s;
+        transition-delay: .2s;
+        z-index: 1;
+    }
+    footer{
+        width: 100%;
+        height: 200px;
+    }
+    }
+    @media only screen and (min-width:600px){
+        html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+       footer{
+        height: 250px;
+       }
+    }
+    @media only screen and (max-width:280px){
+        html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       }
+    .head ul li h1{
+        font-size: 15px;
+    }
+    .subs h1{
+        font-size: 15px;
+    }
+    .subs ul li{
+        font-size: 10px;
+    }
+    .sub2 h1{
+        font-size: 15px;
+    }
+    .sub2 ul li{
+        font-size: 10px;
+    }
+    }
+</style>
+<body>
+    <body style="background-color: bisque;">
+        <div class="head">
+            <ul><li><img src="new barge.jpg" alt=""></li>
+                <li><h1>BRIDGES COLLEGE ZANA</h1></li>
+            </ul></div>
+            <div class="container"><img src="6.jpg" alt=""></div>
+            <section class="all">
+            <div class="subs">
+                <h1>O LEVEL<br> SUBJECTS</h1>
+                <ul>
+                    <li>Physics</li>
+                    <li>Mathematics</li>
+                    <li>English Language</li>
+                    <li>Chemistry</li>
+                    <li>Biology</li>
+                    <li>Fine Art</li>
+                    <li>Enterprenuership</li>
+                    <li>History</li>
+                    <li>Geography</li>
+                    <li>Kiswahili</li>
+                    <li>French</li>
+                    <li>Physical Education</li>
+                    <li>CRE</li>
+                    <li>IRE</li>
+                    <li>Computer</li>
+                    <li>Agriculture</li>
+                    <li>Luganda</li>
+                    <li>Vocations: Hair dressing, Cookery and Bakery</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h1>A LEVEL SUBJECTS</h1>
+                <ul>
+                    <li>Physics</li>
+                    <li>Pure Mathematics</li>
+                    <li>General Paper</li>
+                    <li>Chemistry</li>
+                    <li>Biology</li>
+                    <li>Fine Art</li>
+                    <li>Enterprenuership</li>
+                    <li>History</li>
+                    <li>Geography</li>
+                    <li>Economics</li>
+                    <li>ICT</li>
+                    <li>Sub Math</li>
+                    <li>Divinity</li>
+                    <li>IRE</li>
+                    <li>Luganda</li>
+                </ul>
+            </div>
+            </section>
+            <footer>
+                <section class="foot">
+                <p align="center">FOR MORE INFOMATION CONTACT</p>
+                <ul align="center">
+                    <li>0773816614</li>
+                    <li>0706745480</li>
+                    <li>0772631328</li>
+                </ul>
+                <p align="center"><a href="bridgescollegezana2022@gmail.com">Email: bridgescollegezana2022@gmail.com</a></p>
+                </section>
+            </footer>
+</body>
+</html>
